@@ -1,2 +1,2 @@
 # US-Power-Outage-Trends
-DSC 80 Project
+by Gino Angelici (ganglici@ucsd.edu) and Ifunanya Okoroma (iokoroma@ucsd.edu)
