@@ -75,8 +75,8 @@ To run this hypothesis test, we ran np.random.multinomial, which provides a simu
 <iframe src="assets/HT2.html" width=800 height=600 frameBorder=0></iframe>
 
 ### Hypothesis Test <br />
-Null: The state of California experiences the same frequency of power outages as the rest of the country <br />
-Alternative: California power outages and power outages for the rest of the country come from two different distributions <br />
+Null: The state of California experiences the same frequency of severe weather power outages each season as the rest of the country. <br />
+Alternative: The state of California experiences a different frequency of severe weather power outages each season than the rest of the country. <br />
 
 |        |   US Severe Weather Outage Distribution |
 |:-------|----------------------------------------:|
