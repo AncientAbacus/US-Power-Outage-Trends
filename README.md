@@ -20,7 +20,7 @@ These were our next steps: <br />
 1. Taking a row of units and concatenating those to the column names so they would not be recognized as actual data entries. Dropping that row from the dataframe afterwards. <br />
 2. Combining the 'OUTAGE.START.DATE' and 'OUTAGE.START.TIME' columns to make them one column ('OUTAGE.START') to represent the time the power went out as a pandas datetime type. Then, dropping the two columns since they are not needed anymore. <br />
 3. Combining the 'OUTAGE.RESTORATION.DATE' and 'OUTAGE.RESTORATION.TIME' columns to make them one column ('OUTAGE.RESTORATION') to represent the time the power was restored as a pandas datetime type. Then, dropping the two columns since they are not needed anymore. <br />
-4. Manually checking each column to assess the type of the values in that column. We changed them accordingly to have them make more sense (ex. changing the type of the 'YEAR' column to an 'Int64' type instead of 'float'). <br /> 
+4. Manually checking each column to assess the type of the values in that column. We changed them accordingly to have them make more sense (ex: changing the type of the 'YEAR' column to an 'Int64' type instead of 'float'). <br /> 
 
 ## Exploratory Data Analysis (EDA)
 We explored this dataset with various univariate and bivariate analyses and utilized different ways to display them. <br />
@@ -38,6 +38,8 @@ For the portion where we had to conduct hypothesis testing, we completed two tes
 ### Hypothesis Test <br />
 Null: The frequency of a particular climate category is not an indicator of when an outage occurs <br />
 Alternative: Warmer climate categories are a better breeding ground to have power outages <br />
+
+To run this hypothesis test, we ran np.random.multinomial, which provides a simulation of tests under the null hypothesis. To calculate the p-value, we found the simulated porportion of warm climates and counted the porportion of those that were above 33%. This communicates how common it is to see warmer climates as greater than 33% of all the climates of the power outage entries.
 
 ### Permutation Test <br />
 Null: The state of California experiences the same frequency of power outages as the rest of the country <br />
