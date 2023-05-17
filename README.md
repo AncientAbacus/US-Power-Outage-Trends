@@ -64,6 +64,13 @@ We explored this dataset with various univariate and bivariate analyses and util
 ### Pivot Table: Used to observed the concentration of power outages throughout the four seasons of the year <br />
 Note: Further data cleaning was necessary to display this pivot table in the desired format. The 'MONTH' data was initially represented as integers. The type of the column needed to be converted to strings before they were replaced with the appropriate season that corresponded to that month.
 
+| SEASON   | CAUSE.CATEGORY   |   OBS |   OUTAGE.DURATION |
+|:---------|:-----------------|------:|------------------:|
+| Fall     | severe weather   |   158 |           94.1019 |
+| Spring   | severe weather   |   125 |           54.7947 |
+| Summer   | severe weather   |   283 |           53.0054 |
+| Winter   | severe weather   |   193 |           64.4887 |
+
 ## Assessment of Missingness
 While conducting our EDA, we noticed that the 'OUTAGE.START' had missing values that would also affect the missingness of other columns such as 'OUTAGE.RESTORATION' and 'OUTAGE.DURATION', along with the construction of 'SEASON' as and added a column along with being used in our pivot table. We investigated further to understand why this was. <br />
 
