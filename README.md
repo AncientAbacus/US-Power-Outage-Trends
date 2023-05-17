@@ -20,7 +20,9 @@ We commenced a very thorough data cleaning process. Our dataset was collecting u
 These were our next steps: <br />
 
 1. Taking a row of units and concatenating those to the column names so they would not be recognized as actual data entries. Dropping that row from the dataframe afterwards. <br />
-2. Combining the OUTAGE.START.DATE and OUTAGE.START.TIME
+2. Combining the 'OUTAGE.START.DATE' and 'OUTAGE.START.TIME' columns to make them one entry to represent the time the power went out as a pandas datetime type. Then, dropping the two columns since they are not needed anymore. <br />
+3. Combining the 'OUTAGE.RESTORATION.DATE' and 'OUTAGE.RESTORATION.TIME' columns to make them one entry to represent the time the power was restored as a pandas datetime type. Then, dropping the two columns since they are not needed anymore. <br />
+4. Manually checking each column to assess the type of the values in that column. We changed them accordingly to have them make more sense (ex. changing the type of the 'YEAR' column to an 'Int64' type instead of 'float'). <br /> 
 
 ## Assessment of Missingness
 
