@@ -13,9 +13,7 @@ For this project, we decided to look at a dataset that summarized all major powe
  By answering this question, we hope to provide better insight into how weather causes power outages and what time of year these types of outages are most prevalent. For our research, we looked at the columns of climate category, outage causes, outage durations, months, state names and state postal codes. The outage causes column contains strings that relate to what caused the observed power outage. Outage duration is tracked in minutes and months are tracked with floats.
 
 ## Cleaning and Exploratory Data Analysis
-Once we downloaded the file, we got manually got rid of the first 5 rows and first 2 columns as these contained a basic description of the dataset that was not part of the table. Next, we decided to drop the units row and move the data from this row into a separate dictionary. This allowed us to check the units of each column without changing the names of the columns. The next big step was to combine the start dates and start times of outages in one column called "OUTAGE.START". We did this by 
-
-We commenced a very thorough data cleaning process. Our dataset was collecting using a Microsoft Excel (.xlsx) file. Before converting to a .csv file, we manually removed the first five rows and the first column as these were not actually data entries. These manual changes made it much easier to work with the converted .csv file in Jupyter Notebook. <br />
+We commenced a very thorough data cleaning process. Our dataset was collecting using a Microsoft Excel (.xlsx) file. Before converting to a .csv file, we manually removed the first five rows and the two columns as these were not actually data entries. They served as basic description of the dataset that were not a part of the table. These manual changes made it much easier to work with the converted .csv file in Jupyter Notebook. <br />
 
 These were our next steps: <br />
 
