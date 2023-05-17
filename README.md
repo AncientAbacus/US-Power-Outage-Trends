@@ -27,12 +27,33 @@ We explored this dataset with various univariate and bivariate analyses and util
 
 <iframe src="assets/UP1.html" width=800 height=600 frameBorder=0></iframe>
 
+<iframe src="assets/UP2.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/UP3_Spring.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/UP4_Summer.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/UP5_Fall.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/UP6_Winter.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/BP1.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/BP2.html" width=800 height=600 frameBorder=0></iframe>
+
 ### Pivot Table: Used to observed the concentration of power outages throughout the four seasons of the year <br />
 Note: Further data cleaning was necessary to display this pivot table in the desired format. The 'MONTH' data was initially represented as integers. The type of the column needed to be converted to strings before they were replaced with the appropriate season that corresponded to that month.
 
 ## Assessment of Missingness
 While conducting our EDA, we noticed that the 'OUTAGE.START' had missing values that would also affect the missingness of other columns such as 'OUTAGE.RESTORATION', along with the construction of our pivot table. We investigated further to understand why this was.
 
+<iframe src="assets/EM1.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/TM1.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/EM2.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/TM2.html" width=800 height=600 frameBorder=0></iframe>
 
 ## Hypothesis Testing
 For the portion where we had to conduct hypothesis testing, we completed two tests, a hypothesis test and a permutation test. <br />
@@ -43,6 +64,8 @@ Alternative: Warmer climate categories are a better breeding ground to have powe
 
 To run this hypothesis test, we ran np.random.multinomial, which provides a simulation of tests under the null hypothesis. To calculate the p-value, we found the simulated porportion of warm climates and counted the porportion of those that were above 33%. This communicates how common it is to see warmer climates as greater than 33% of all the climates of the power outage entries.
 
-### Permutation Test <br />
+### Hypothesis Test <br />
 Null: The state of California experiences the same frequency of power outages as the rest of the country <br />
 Alternative: California power outages and power outages for the rest of the country come from two different distributions <br />
+
+<iframe src="assets/HT.html" width=800 height=600 frameBorder=0></iframe>
