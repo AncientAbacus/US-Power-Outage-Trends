@@ -49,6 +49,9 @@ While conducting our EDA, we noticed that the 'OUTAGE.START' had missing values 
 
 When assessing missingness, we asked two questions that focused primarly on the 'OUTAGE.DURATION' column and its missingness dependence. <br />
 
+### 1. Is the missingness of 'OUTAGE.DURATION' dependent on the values of 'CLIMATE.CATEGORY'? <br />
+To check this, we looked at the missingness of 'OUTAGE.DURATION' conditioned on 'CLIMATE.CATEGORY'. The implementation for this was to complete a permutation test and use the total variation distance (TVD) as our test statistic. With a p-value less than our cutoff at 0.05, we can determine that the missingness of 'OUTAGE.DURATION' is dependent on 'CLIMATE.CATEGORY'.
+
 <iframe src="assets/EM1.html" width=800 height=600 frameBorder=0></iframe>
 
 <iframe src="assets/TM1.html" width=800 height=600 frameBorder=0></iframe>
