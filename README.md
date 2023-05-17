@@ -15,6 +15,12 @@ For this project, we decided to look at a dataset that summarized all major powe
 ## Cleaning and Exploratory Data Analysis
 Once we downloaded the file, we got manually got rid of the first 5 rows and first 2 columns as these contained a basic description of the dataset that was not part of the table. Next, we decided to drop the units row and move the data from this row into a separate dictionary. This allowed us to check the units of each column without changing the names of the columns. The next big step was to combine the start dates and start times of outages in one column called "OUTAGE.START". We did this by 
 
+We commenced a very thorough data cleaning process. Our dataset was collecting using a Microsoft Excel (.xlsx) file. Before converting to a .csv file, we manually removed the first five rows and the first column as these were not actually data entries. These manual changes made it much easier to work with the converted .csv file in Jupyter Notebook. <br />
+
+These were our next steps: <br />
+
+1. Taking a row of units and concatenating those to the column names so they would not be recognized as actual data entries. Dropping that row from the dataframe afterwards. <br />
+2. Combining the OUTAGE.START.DATE and OUTAGE.START.TIME
 
 ## Assessment of Missingness
 
