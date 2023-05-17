@@ -25,6 +25,8 @@ These were our next steps: <br />
 ## Exploratory Data Analysis (EDA)
 We explored this dataset with various univariate and bivariate analyses and utilized different ways to display them. <br />
 
+<iframe src="assets/UP1.html" width=800 height=600 frameBorder=0></iframe>
+
 ### Pivot Table: Used to observed the concentration of power outages throughout the four seasons of the year <br />
 Note: Further data cleaning was necessary to display this pivot table in the desired format. The 'MONTH' data was initially represented as integers. The type of the column needed to be converted to strings before they were replaced with the appropriate season that corresponded to that month.
 
