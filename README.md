@@ -78,4 +78,18 @@ To run this hypothesis test, we ran np.random.multinomial, which provides a simu
 Null: The state of California experiences the same frequency of power outages as the rest of the country <br />
 Alternative: California power outages and power outages for the rest of the country come from two different distributions <br />
 
+|        |   US Severe Weather Outage Distribution |
+|:-------|----------------------------------------:|
+| Summer |                                0.372859 |
+| Winter |                                0.254282 |
+| Fall   |                                0.208169 |
+| Spring |                                0.16469  |
+
+|        |   CA Severe Weather Outage Distribution |
+|:-------|----------------------------------------:|
+| Winter |                                0.371429 |
+| Fall   |                                0.257143 |
+| Summer |                                0.214286 |
+| Spring |                                0.157143 |
+
 <iframe src="assets/HT1.html" width=800 height=600 frameBorder=0></iframe>
