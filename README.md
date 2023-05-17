@@ -45,11 +45,16 @@ We explored this dataset with various univariate and bivariate analyses and util
 Note: Further data cleaning was necessary to display this pivot table in the desired format. The 'MONTH' data was initially represented as integers. The type of the column needed to be converted to strings before they were replaced with the appropriate season that corresponded to that month.
 
 ## Assessment of Missingness
-While conducting our EDA, we noticed that the 'OUTAGE.START' had missing values that would also affect the missingness of other columns such as 'OUTAGE.RESTORATION', along with the construction of our pivot table. We investigated further to understand why this was.
+While conducting our EDA, we noticed that the 'OUTAGE.START' had missing values that would also affect the missingness of other columns such as 'OUTAGE.RESTORATION' and 'OUTAGE.DURATION', along with the construction of 'SEASON' as and added a column along with being used in our pivot table. We investigated further to understand why this was. <br />
+
+When assessing missingness, we asked two questions that focused primarly on the 'OUTAGE.DURATION' column and its missingness dependence. <br />
 
 <iframe src="assets/EM1.html" width=800 height=600 frameBorder=0></iframe>
 
 <iframe src="assets/TM1.html" width=800 height=600 frameBorder=0></iframe>
+
+### 2. Is the missingness of 'OUTAGE.DURATION' dependent on the values of 'SEASON'? <br />
+To check this, we looked at the missingness of 'OUTAGE.DURATION' conditioned on 'SEASON'. The implementation for this was to complete a permutation test and use the total variation distance (TVD) as our test statistic. With a p-value greater than our cutoff at 0.05, we can determine that the missingness of 'OUTAGE.DURATION' is not dependent on 'SEASON'.
 
 <iframe src="assets/EM2.html" width=800 height=600 frameBorder=0></iframe>
 
