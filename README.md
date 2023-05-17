@@ -64,8 +64,10 @@ Alternative: Warmer climate categories are a better breeding ground to have powe
 
 To run this hypothesis test, we ran np.random.multinomial, which provides a simulation of tests under the null hypothesis. To calculate the p-value, we found the simulated porportion of warm climates and counted the porportion of those that were above 33%. This communicates how common it is to see warmer climates as greater than 33% of all the climates of the power outage entries.
 
+<iframe src="assets/HT2.html" width=800 height=600 frameBorder=0></iframe>
+
 ### Hypothesis Test <br />
 Null: The state of California experiences the same frequency of power outages as the rest of the country <br />
 Alternative: California power outages and power outages for the rest of the country come from two different distributions <br />
 
-<iframe src="assets/HT.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/HT1.html" width=800 height=600 frameBorder=0></iframe>
