@@ -63,9 +63,11 @@ Here, we created a histogram to understand the amount of power outages that went
 
 <iframe src="assets/UP6_Winter.html" width=800 height=600 frameBorder=0></iframe>
  
- The following is a bivariate analysis of...
+The following is a bar chart, which displays a bivariate analysis of the average 'OUTAGE.DURATION' throughout each season of the year. Throughout the fall and winter seasons of the year in the U.S., power tends to be out for longer.
 
 <iframe src="assets/BP1.html" width=800 height=600 frameBorder=0></iframe>
+ 
+The second bivariate analysis is another bar chart, which displays a bivariate analysis of the average 'OUTAGE.DURATION' throughout each 'CLIMATE.CATEGORY' a power outage was classified under. With the warmer climates, power tends to be out for longer.
 
 <iframe src="assets/BP2.html" width=800 height=600 frameBorder=0></iframe>
 
