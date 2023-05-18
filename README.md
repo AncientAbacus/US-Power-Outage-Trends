@@ -104,16 +104,18 @@ To check this, we looked at the missingness of 'OUTAGE.DURATION' conditioned on 
 For the portion where we had to conduct hypothesis testing, we completed two tests, a hypothesis test and a permutation test. <br />
 
 ### Hypothesis Test <br />
-Null: The frequency of a particular climate category is not an indicator of when an outage occurs <br />
-Alternative: Warmer climate categories are a better breeding ground to have power outages <br />
+Null: The frequency of a particular climate category is not an indicator of when an outage occurs. <br />
+Alternative: Warmer climate categories are a better breeding ground to have power outages. <br />
 
-To run this hypothesis test, we ran np.random.multinomial, which provides a simulation of tests under the null hypothesis. To calculate the p-value, we found the simulated porportion of warm climates and counted the porportion of those that were above 33%. This communicates how common it is to see warmer climates as greater than 33% of all the climates of the power outage entries.
+To run this hypothesis test, we ran np.random.multinomial, which provides a simulation of tests under the null hypothesis. To calculate the p-value, we found the simulated porportion of warm climates and counted the porportion of those that were above 33%. This communicates how common it is to see warmer climates as greater than 33% of all the climates of the power outage entries. With a p-value cutoff of 0.05, the reject the null hypothesis.
 
 <iframe src="assets/HT2.html" width=800 height=600 frameBorder=0></iframe>
 
 ### Hypothesis Test <br />
 Null: The state of California experiences the same frequency of severe weather power outages each season as the rest of the country. <br />
 Alternative: The state of California experiences a different frequency of severe weather power outages each season than the rest of the country. <br />
+ 
+To run this hypothesis test, we ran np.random.multinomial, which provides a simulation of tests under the null hypothesis. To calculate the p-value, we found the simulated porportion of outages in every season and counted the porportion of those that were above 25%. This communicates how common it is to see warmer climates as greater than 33% of all the climates of the power outage entries. With a p-value cutoff of 0.05, the [] the null hypothesis.
 
 |        |   US Severe Weather Outage Distribution |
 |:-------|----------------------------------------:|
