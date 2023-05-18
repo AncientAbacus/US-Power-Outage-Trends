@@ -45,9 +45,15 @@ Cleaned Dataset with Relevant Columns:
 ## Exploratory Data Analysis (EDA)
 We explored this dataset with various univariate and bivariate analyses and utilized different ways to display them. <br />
 
+We first explored the frequency of the causes of the power outages and saw that most of them came from severe weather events. <br />
+
 <iframe src="assets/UP1.html" width=800 height=600 frameBorder=0></iframe>
+ 
+Here, we created a histogram to understand the amount of power outages that went on for a certain amount of time. Most of the power outages had a small 'OUTAGE.DURATION', meaning they were resolved within a few hours. Meanwhile, there were far fewer that took many hours to get the power restored. <br />
 
 <iframe src="assets/UP2.html" width=800 height=600 frameBorder=0></iframe>
+ 
+ The following four visualizations map the different concentrations of power outages in the United States throughout the four different seasons. <br />
 
 <iframe src="assets/UP3_Spring.html" width=800 height=600 frameBorder=0></iframe>
 
@@ -56,6 +62,8 @@ We explored this dataset with various univariate and bivariate analyses and util
 <iframe src="assets/UP5_Fall.html" width=800 height=600 frameBorder=0></iframe>
 
 <iframe src="assets/UP6_Winter.html" width=800 height=600 frameBorder=0></iframe>
+ 
+ The following is a bivariate analysis of...
 
 <iframe src="assets/BP1.html" width=800 height=600 frameBorder=0></iframe>
 
