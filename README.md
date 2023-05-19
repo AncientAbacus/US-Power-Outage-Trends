@@ -83,6 +83,8 @@ Note: Further data cleaning was necessary to display this pivot table in the des
 
 ## Assessment of Missingness
 While conducting our EDA, we noticed that the 'OUTAGE.START' had missing values that would also affect the missingness of other columns such as 'OUTAGE.RESTORATION' and 'OUTAGE.DURATION', along with the construction of 'SEASON' as and added a column along with being used in our pivot table. We investigated further to understand why this was. Here, we formulated our missingness assessments in the form of hypothesis tests. <br />
+ 
+[add it here]
 
 When assessing missingness, we asked two questions that focused primarly on the 'OUTAGE.DURATION' column and its missingness dependence. <br />
 
