@@ -82,19 +82,27 @@ Note: Further data cleaning was necessary to display this pivot table in the des
 | Winter   | severe weather   |   193 |           64.4887 |
 
 ## Assessment of Missingness
-While conducting our EDA, we noticed that the 'OUTAGE.START' had missing values that would also affect the missingness of other columns such as 'OUTAGE.RESTORATION' and 'OUTAGE.DURATION', along with the construction of 'SEASON' as and added a column along with being used in our pivot table. We investigated further to understand why this was. <br />
+While conducting our EDA, we noticed that the 'OUTAGE.START' had missing values that would also affect the missingness of other columns such as 'OUTAGE.RESTORATION' and 'OUTAGE.DURATION', along with the construction of 'SEASON' as and added a column along with being used in our pivot table. We investigated further to understand why this was. Here, we formulated our missingness assessments in the form of hypothesis tests. <br />
 
 When assessing missingness, we asked two questions that focused primarly on the 'OUTAGE.DURATION' column and its missingness dependence. <br />
 
 ### 1. Is the missingness of 'OUTAGE.DURATION' dependent on the values of 'CLIMATE.CATEGORY'? <br />
-To check this, we looked at the missingness of 'OUTAGE.DURATION' conditioned on 'CLIMATE.CATEGORY'. The implementation for this was to complete a permutation test and use the total variation distance (TVD) as our test statistic. With a p-value less than our cutoff at 0.05, we can determine that the missingness of 'OUTAGE.DURATION' is dependent on 'CLIMATE.CATEGORY'.
+Null: The distribution of 'CLIMATE.CATEGORY' when 'OUTAGE.DURATION' is missing is the same as the distribution of 'CLIMATE.CATEGORY' when 'OUTAGE.DURATION' is not missing. <br />
+Alternative: The distribution of 'CLIMATE.CATEGORY' when 'OUTAGE.DURATION' is missing is different than the distribution of 'CLIMATE.CATEGORY' when 'OUTAGE.DURATION' is not missing. <br />
+Significance Level: 0.05 <br />
+ 
+To check this, we looked at the missingness of 'OUTAGE.DURATION' conditioned on 'CLIMATE.CATEGORY'. The implementation for this was to complete a permutation test and use the total variation distance (TVD) as our test statistic. With a p-value less than our cutoff at 0.05, we can determine that the missingness of 'OUTAGE.DURATION' is dependent on 'CLIMATE.CATEGORY'. In this case, the 'OUTAGE.DURATION' column is Missing at Random (MAR). <br />
 
 <iframe src="assets/EM1.html" width=800 height=600 frameBorder=0></iframe>
 
 <iframe src="assets/TM1.html" width=800 height=600 frameBorder=0></iframe>
 
 ### 2. Is the missingness of 'OUTAGE.DURATION' dependent on the values of 'SEASON'? <br />
-To check this, we looked at the missingness of 'OUTAGE.DURATION' conditioned on 'SEASON'. The implementation for this was to complete a permutation test and use the total variation distance (TVD) as our test statistic. With a p-value greater than our cutoff at 0.05, we can determine that the missingness of 'OUTAGE.DURATION' is not dependent on 'SEASON'.
+Null: The distribution of 'SEASON' when 'OUTAGE.DURATION' is missing is the same as the distribution of 'SEASON' when 'OUTAGE.DURATION' is not missing. <br />
+Alternative: The distribution of 'SEASON' when 'OUTAGE.DURATION' is missing is different than the distribution of 'SEASON' when 'OUTAGE.DURATION' is not missing. <br />
+Significance Level: 0.05 <br />
+
+To check this, we looked at the missingness of 'OUTAGE.DURATION' conditioned on 'SEASON'. The implementation for this was to complete a permutation test and use the total variation distance (TVD) as our test statistic. With a p-value greater than our cutoff at 0.05, we can determine that the missingness of 'OUTAGE.DURATION' is not dependent on 'SEASON'. In this case, the 'OUTAGE.DURATION' column is Missing Completely at Random (MCAR). <br />
 
 <iframe src="assets/EM2.html" width=800 height=600 frameBorder=0></iframe>
 
