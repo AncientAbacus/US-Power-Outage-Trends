@@ -111,7 +111,7 @@ To check this, we looked at the missingness of 'OUTAGE.DURATION' conditioned on 
 ## Hypothesis Testing
 For the portion where we had to conduct hypothesis testing, we completed two tests, a hypothesis test and a permutation test. <br />
 
-### Hypothesis Test <br />
+### Hypothesis Test 1 <br />
 Null: The US experiences the same frequency of warm climate severe weather power outages as any other climate category (normal or cold). <br />
 Alternative: The US experiences the different frequency of warm climate severe weather power outages than other climate categorues (normal or cold). <br />
 Significance Level: 0.05 <br />
@@ -120,12 +120,13 @@ To run this hypothesis test, we ran np.random.multinomial, which provides a simu
 
 <iframe src="assets/HT2.html" width=800 height=600 frameBorder=0></iframe>
 
-### Hypothesis Test <br />
+### Hypothesis Test 2 <br />
 Null: California experiences the same frequency of severe weather power outages each season as the rest of the country. <br />
 Alternative: California experiences a different frequency of severe weather power outages each season as the rest of the country. <br />
 Significance Level: 0.05 <br />
- 
-To run this hypothesis test, we ran np.random.multinomial, which provides a simulation of tests under the null hypothesis. To calculate the p-value, . With a p-value cutoff of 0.05, we reject the null hypothesis.
+
+We first idenitfied the drastic differences in severe weather power outage distributions between the U.S. and California across all seasons. Noting these differences, we ran a hypothesis test to see if these differences were significant.
+
 
 |        |   US Severe Weather Outage Distribution |
 |:-------|----------------------------------------:|
@@ -140,5 +141,7 @@ To run this hypothesis test, we ran np.random.multinomial, which provides a simu
 | Fall   |                                0.257143 |
 | Summer |                                0.214286 |
 | Spring |                                0.157143 |
+
+To run this hypothesis test, we ran np.random.multinomial, which provides a simulation of tests under the null hypothesis. To calculate the p-value, we compared the results of these California distribution simulations with the given population distribution of the U.S. With a p-value cutoff of 0.05, we reject the null hypothesis and conclude that there is evidence to support the claim that California experiences a different frequency of severe weather power outages each season than the rest of the country.
 
 <iframe src="assets/HT1.html" width=800 height=600 frameBorder=0></iframe>
