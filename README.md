@@ -4,9 +4,8 @@ A project for DSC 80: Practice and Application of Data Science taught at UC San 
 
 ## Introduction
 
-For this project, we decided to look at a dataset that summarized all major power outages in the continental United States. We used this website to download the [dataset](https://engineering.purdue.edu/LASCI/research-data/outages/outagerisks)
- <br />
-We refered to this link for [variable definitions](https://www.sciencedirect.com/science/)article/pii/S2352340918307182
+For this project, we decided to look at a dataset that summarized all major power outages in the continental United States. We used this website to download the [dataset](https://engineering.purdue.edu/LASCI/research-data/outages/outagerisks).
+We refered to this link for [variable definitions](https://www.sciencedirect.com/science/article/pii/S2352340918307182)
  <br />
 The data ranged from January 2000 to July 2016. The dataset contains 1534 rows (observations) and 56 columns (variables). Upon investigating and cleaning the data, we came up with the question: <br />
 <br />
@@ -88,7 +87,7 @@ Note: Further data cleaning was necessary to display this pivot table in the des
 ## Assessment of Missingness
 While conducting our EDA, we noticed that the 'OUTAGE.START' had missing values that would also affect the missingness of other columns such as 'OUTAGE.RESTORATION' and 'OUTAGE.DURATION', along with the construction of 'SEASON' as and added a column along with being used in our pivot table. We investigated further to understand why this was. Here, we formulated our missingness assessments in the form of hypothesis tests. <br />
  
-Our first assessment of missingness in this dataset started with an investigation into Not Missing at Random (NMAR) data. We picked out the 'ANOMALY.LEVEL' column at the variable with data that was NMAR. We reasoned that since the this column represented the cold and warm episodes of the El Niño/La Niña (ONI) oceanic index by season, which was gathered from a separate source (https://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php), these data and their missingness were due to extenuating circumstances and could not be predicted by the rest of the dataset.
+Our first assessment of missingness in this dataset started with an investigation into Not Missing at Random (NMAR) data. We picked out the 'ANOMALY.LEVEL' column at the variable with data that was NMAR. We reasoned that since the this column represented the cold and warm episodes of the El Niño/La Niña (ONI) oceanic index by season, which was gathered from a separate [source](https://origin.cpc.ncep.noaa.gov/products/analysis_monitoring/ensostuff/ONI_v5.php), these data and their missingness were due to extenuating circumstances and could not be predicted by the rest of the dataset.
 
 When assessing missingness, we asked two questions that focused primarly on the 'OUTAGE.DURATION' column and its missingness dependence. <br />
 
