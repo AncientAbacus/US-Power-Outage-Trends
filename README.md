@@ -1,4 +1,4 @@
-# US-Power-Outage-Trends
+# US Power Outage Trends Across Seasons and Climates
 By Gino Angelici (gangelici@ucsd.edu) and Ifunanya Okoroma (iokoroma@ucsd.edu) <br />
 A project for DSC 80: Practice and Application of Data Science taught at UC San Diego during the Spring 2023 quarter
 
