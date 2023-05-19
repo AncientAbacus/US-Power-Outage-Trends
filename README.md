@@ -51,11 +51,11 @@ Cleaned Dataset with Relevant Columns:
 ## Exploratory Data Analysis (EDA)
 We explored this dataset with various univariate and bivariate analyses and utilized different ways to display them. <br />
 
-We first explored the frequency of the causes of the power outages and saw that most of them, 763 observations, came from severe weather events. After discovering this, we decided to only use observations with 'severe weather' as the 'CAUSE.CATEGORY'.<br />
+Our first univariate analysis explored the frequency of the causes of the power outages and saw that most of them, 763 observations, came from severe weather events. After discovering this, we decided to only use observations with 'severe weather' as the 'CAUSE.CATEGORY'.<br />
 
 <iframe src="assets/UP1.html" width=800 height=600 frameBorder=0></iframe>
  
-Here, we created a histogram to understand the amount of power outages that went on for a certain amount of time. Most of the power outages had a small 'OUTAGE.DURATION', meaning they were resolved within a few hours. Meanwhile, there were far fewer that took many hours to get the power restored. <br />
+Here, we created a histogram to illustrate our second univariate analysis, which shows the amount of power outages that went on for a certain amount of time. Most of the power outages had a small 'OUTAGE.DURATION', meaning they were resolved within a few hours. Meanwhile, there were far fewer that took many hours to get the power restored. <br />
 
 <iframe src="assets/UP2.html" width=800 height=600 frameBorder=0></iframe>
  
