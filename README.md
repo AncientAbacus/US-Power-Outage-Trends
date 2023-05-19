@@ -5,8 +5,7 @@ A project for DSC 80: Practice and Application of Data Science taught at UC San 
 ## Introduction
 
 For this project, we decided to look at a dataset that summarized all major power outages in the continental United States. We used this website to download the [dataset](https://engineering.purdue.edu/LASCI/research-data/outages/outagerisks).
-We refered to this link for [variable definitions](https://www.sciencedirect.com/science/article/pii/S2352340918307182)
- <br />
+We refered to this link for [variable definitions](https://www.sciencedirect.com/science/article/pii/S2352340918307182).
 The data ranged from January 2000 to July 2016. The dataset contains 1534 rows (observations) and 56 columns (variables). Upon investigating and cleaning the data, we came up with the question: <br />
 <br />
 
