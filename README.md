@@ -117,7 +117,7 @@ To check this, we looked at the missingness of 'OUTAGE.DURATION' conditioned on 
 <iframe src="assets/TM2.html" width=800 height=600 frameBorder=0></iframe>
 
 ## Hypothesis Testing
-For the portion where we had to conduct hypothesis testing, we completed two tests, a hypothesis test and a permutation test. <br />
+In this portion, we conduct hypothesis tests. <br />
 
 ### Hypothesis Test 1 <br />
 Null: The US experiences the same frequency of warm climate severe weather power outages as any other climate category (normal or cold). <br />
