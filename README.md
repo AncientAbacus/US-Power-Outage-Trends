@@ -51,7 +51,7 @@ Cleaned Dataset with Relevant Columns:
 ## Exploratory Data Analysis (EDA)
 We explored this dataset with various univariate and bivariate analyses and utilized different ways to display them. <br />
 
-We first explored the frequency of the causes of the power outages and saw that most of them came from severe weather events. <br />
+We first explored the frequency of the causes of the power outages and saw that most of them, [# of entries], came from severe weather events. <br />
 
 <iframe src="assets/UP1.html" width=800 height=600 frameBorder=0></iframe>
  
@@ -122,6 +122,7 @@ For the portion where we had to conduct hypothesis testing, we completed two tes
 ### Hypothesis Test 1 <br />
 Null: The US experiences the same frequency of warm climate severe weather power outages as any other climate category (normal or cold). <br />
 Alternative: The US experiences the different frequency of warm climate severe weather power outages than other climate categorues (normal or cold). <br />
+Test Statistic: Proportion of severe weather outages in warm climate. <br />
 Significance Level: 0.05 <br />
 
 To run this hypothesis test, we ran np.random.multinomial, which provides a simulation of tests under the null hypothesis. To calculate the p-value, we found the simulated porportion of warm climates and counted the porportion of those that were above 33%. This communicates how common it is to see warmer climates as greater than 33% of all the climates of the power outage entries. With a p-value cutoff of 0.05, the reject the null hypothesis.
@@ -131,6 +132,7 @@ To run this hypothesis test, we ran np.random.multinomial, which provides a simu
 ### Hypothesis Test 2 <br />
 Null: California experiences the same frequency of severe weather power outages each season as the rest of the country. <br />
 Alternative: California experiences a different frequency of severe weather power outages each season as the rest of the country. <br />
+Test Statistic: Total Variation Distance <br />
 Significance Level: 0.05 <br />
 
 We first idenitfied the drastic differences in severe weather power outage distributions between the U.S. and California across all seasons. Noting these differences, we ran a hypothesis test to see if these differences were significant.
